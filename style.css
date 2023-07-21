@@ -6,7 +6,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #FFEBCD;
+    background-color: #DEB887;
     overflow: hidden;
 }
   
@@ -16,7 +16,7 @@ nav ul {
   
   nav li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -27,8 +27,8 @@ nav ul {
   }
 
 header {
-    background-color: #FFEBCD;
-    color: white;
+    background-color: #DEB887;
+    color: black;
     text-align: center;
     padding: 60px;
 }
