@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
   }
-  
-  nav ul {
+
+nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #F5F5DC;
     overflow: hidden;
-  }
+}
   
   nav li {
     float: left;
@@ -25,13 +25,13 @@ body {
   nav li a:hover {
     background-color: #111;
   }
-  
-  header {
-    background-color: #333;
+
+header {
+    background-color: #F5F5DC;
     color: white;
     text-align: center;
     padding: 60px;
-  }
+}
   
   main {
     padding: 20px;
