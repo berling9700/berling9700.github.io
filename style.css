@@ -23,7 +23,7 @@ nav ul {
   }
   
   nav li a:hover {
-    background-color: white;
+    background-color: black;
   }
 
 header {
@@ -41,6 +41,7 @@ section {
     padding: 40px;
     margin: 20px;
     background-color: #2F4F4F;
+    color: white;
     border-radius: 10px;
 }
   
