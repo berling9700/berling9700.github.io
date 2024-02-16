@@ -29,10 +29,8 @@ nav ul {
   }
 
 header {
-    background-color: #171a1a;
     color: white;
     text-align: center;
-    padding: 60px;
 }
   
   main {
@@ -42,8 +40,8 @@ header {
 section {
     padding: 40px;
     margin: 20px;
-    background-color: #171a1a;
     color: white;
+    text-align: center;
     border-radius: 10px;
 }
   
