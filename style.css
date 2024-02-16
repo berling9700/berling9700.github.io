@@ -18,7 +18,7 @@ nav ul {
     display: block;
     color: white;
     text-align: center;
-    /* padding: 14px 16px; */
+    padding: 14px 16px;
     text-decoration: none;
   }
   
@@ -30,16 +30,16 @@ header {
     background-color: #171a1a;
     color: white;
     text-align: center;
-    /* padding: 60px; */
+    padding: 60px;
 }
   
   main {
-    /* padding: 20px; */
+    padding: 20px;
   }
 
 section {
-    /* padding: 40px; */
-    /* margin: 20px; */
+    padding: 40px;
+    margin: 20px;
     background-color: #171a1a;
     color: white;
     border-radius: 10px;
