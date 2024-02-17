@@ -15,3 +15,8 @@ var pdfButton = document.getElementById('pdf-button');
 pdfButton.addEventListener('click', function() {
     window.open('pdfs/Robby Berling Resume.pdf', '_blank');
 });
+
+// Scroll to the About Me section when the button is clicked
+document.getElementById('view-work-button').addEventListener('click', function() {
+  document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });
+});

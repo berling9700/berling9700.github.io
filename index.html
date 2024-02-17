@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Portfolio</title>
+    <title>Robby Berling</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -11,50 +11,51 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#work">My Work</a></li>
-            <li><a href="#skills">My Skills</a></li>
             <li><a href="#contact">Contact Me</a></li>
             <!-- Button to display PDF -->
-            <li><a id="pdf-button">Resume</a></li>
+            <li><a id="pdf-button" style="right: 0; position: absolute;">Resume</a></li>
         </ul>
     </nav>
     <header id="home">
       <h1>Hello, I'm <span style="font-weight: bold;">Robby</span>.</h1></h1>
       <h1 style="color: rgb(197, 189, 189);">I'm a full stack developer.</h1>
+      <button id="view-work-button" href="#about-me">View My Work</button>
     </header>
     <main>
-      <section id="about-me">
+      <section id="about-me" style="margin-bottom: 150px;">
         <h2>About Me</h2>
-        <p>Insert your about me content here.</p>
-      </section>
-
-      <section id="work">
-        <h2>My Work</h2>
-        <p>Project 1</p>
-      </section>
-
-      <section id="skills">
-        <h2>My Skills</h2>
+        <p style="margin-left: 150px; margin-right: 150px;">
+          Fully committed to the philosophy of life-long learning, 
+          I'm a full stack developer with a deep passion for JavaScript, 
+          C# and all things web development. The unique combination of creativity, logic, 
+          technology and never running out of new things to discover, drives my excitement and 
+          passion for web development. When I'm not at my computer I like to spend my time 
+          reading, traveling, and following sports.
+        </p>
         <p>        
           <img src="images/C.png" alt="C#">
           <img src="images/python.png" alt="Python">  
           <img src="images/JavaScript.png" alt="JavaScript">  
         </p>
-        <p>        
-          <img src="images/css.png" alt="CSS">
+        <p> 
+          <img style="max-width: 8%;" src="images/css.png" alt="CSS">
           <img src="images/html.png" alt="Html">  
           <img src="images/azure.png" alt="Azure">   
         </p>
       </section>
 
+      <section id="work" style="margin-bottom: 150px;">
+        <h2>My Work</h2>
+        <p>Project 1</p>
+      </section>
+
       <section id="contact">
         <h2>Contact Me</h2>
         <div>
-          <h3>Email</h2>
-          <p>berling9700@gmail.com</p>
+          Email: berling9700@gmail.com
         </div>
         <div>
-          <h2>Phone</h2>
-          <p>614-800-9110</p>
+          Phone: 614-800-9110
         </div>
       </section>
     </main>
