@@ -24,10 +24,10 @@ document.getElementById('view-work-button').addEventListener('click', function()
 particlesJS('particles-js', {
   "particles": {
     "number": {
-      "value": 200, // Adjust the number of particles
+      "value": 350, // Adjust the number of particles
       "density": {
         "enable": true,
-        "value_area": 800 // Adjust the density of particles
+        "value_area": 200 // Adjust the density of particles
       }
     },
     "color": {
@@ -83,11 +83,11 @@ particlesJS('particles-js', {
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
-        "enable": false,
-        "mode": "grab" // Choose interaction mode on hover (grab, bubble, repulse, or remove)
+        "enable": true,
+        "mode": "repulse" // Choose interaction mode on hover (grab, bubble, repulse, or remove)
       },
       "onclick": {
         "enable": false,
@@ -110,8 +110,8 @@ particlesJS('particles-js', {
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 50,
+        "duration": 0.8
       },
       "push": {
         "particles_nb": 4
