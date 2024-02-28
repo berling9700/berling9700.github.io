@@ -5,24 +5,27 @@
     <title>Robby Berling</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+  <body id="body">
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="#work">My Work</a></li>
+            <li><a href="#work">My Projects</a></li>
             <li><a href="#contact">Contact Me</a></li>
             <!-- Button to display PDF -->
             <li><a id="pdf-button" style="right: 0; position: absolute;">Resume</a></li>
         </ul>
     </nav>
     <header id="home">
-      <h1>Hello, I'm <span style="font-weight: bold;">Robby</span>.</h1></h1>
-      <h1 style="color: rgb(197, 189, 189);">I'm a full stack developer.</h1>
-      <button id="view-work-button" href="#about-me">View My Work</button>
+      <div id="particles-container" class="particles-container">
+        <h1>Hello, I'm <span style="font-weight: bold;">Robby</span>.</h1></h1>
+        <h1 style="color: rgb(197, 189, 189);">I'm a full stack developer.</h1>
+        <button id="view-work-button" href="#about-me">View My Work</button>
+      </div>
+      <div id="particles-js" class="particles-js"></div>
     </header>
     <main>
-      <section id="about-me">
+      <section id="about-me" style="text-align: center;">
         <h2>About Me</h2>
         <p style="margin-left: 150px; margin-right: 150px;">
           Fully committed to life-long learning, 
@@ -33,20 +36,31 @@
           reading, traveling, and following sports.
         </p>
         <p>        
-          <img src="images/C.png" alt="C#">
-          <img src="images/python.png" alt="Python">  
-          <img src="images/JavaScript.png" alt="JavaScript">  
+          <img class="image-style" src="images/C.png" alt="C#">
+          <img class="image-style" src="images/python.png" alt="Python">  
+          <img class="image-style" src="images/JavaScript.png" alt="JavaScript">  
         </p>
         <p> 
-          <img style="max-width: 6%;" src="images/css.png" alt="CSS">
-          <img src="images/html.png" alt="Html">  
-          <img src="images/azure.png" alt="Azure">   
+          <img class="image-style" style="max-width: 6%;" src="images/css.png" alt="CSS">
+          <img class="image-style" src="images/html.png" alt="Html">  
+          <img class="image-style" src="images/azure.png" alt="Azure">   
         </p>
       </section>
 
       <section id="work">
-        <h2>My Work</h2>
-        <p>Project 1</p>
+        <h2 style="text-align: center;">My Projects</h2>
+        <h3 style="text-align: left;">Zelda</h3>
+        <p>
+          <img style="max-width: 40%;" src="images/Zelda.png" alt="Zelda">
+        </p>
+        <h3 style="text-align: right; margin-right: 260px;">GroupMe</h3>
+        <p style="text-align: right;">
+          <img style="max-width: 30%;" src="images/GroupMe.jpg" alt="GroupMe">
+        </p>
+        <h3 style="text-align: left;">Mid-Ohio Food Collective</h3>
+        <p>
+          <img style="max-width: 60%;" src="images/MOFC.png" alt="MOFC">
+        </p>
       </section>
 
       <section id="contact">
@@ -57,6 +71,7 @@
         </div>
       </section>
     </main>
+    <script src="particles.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
