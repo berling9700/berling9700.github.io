@@ -86,8 +86,8 @@ section {
 
 .image-style {
   display: inline-block;
-  max-width: 5%; 
-  height: auto; 
+  width: 50px; /* Set a fixed width for the images */
+  height: 50px; /* Set a fixed height for the images */
   margin: 0 20px; 
   border: 2px solid #487e7e; 
   border-radius: 8px; 
@@ -109,7 +109,7 @@ section img:hover {
     z-index: 2; /* Set a higher z-index value */
   }
   
-.particles-js {
+.particles-js-head {
     position: absolute;
     top: 0;
     left: 0;
@@ -117,7 +117,23 @@ section img:hover {
     height: 100%;
     z-index: 1; /* Set a lower z-index value */
   }
-  
+
+  .particles-js-main {
+    position: absolute;
+    width: 100%;
+    height: 420%;
+    z-index: 1; /* Set a lower z-index value */
+  }
+
+  .work-img {
+    width: 500px; /* Set a fixed width for the images */
+    height: 500px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the entire image is visible within the specified dimensions */
+    border: 4px solid #487e7e; /* Add a thick border around the images */
+    border-radius: 10px; /* Add rounded corners to the images */
+    margin: 20px; /* Add margin around each image for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
   
   @media screen and (max-width: 600px) {
     nav li {
