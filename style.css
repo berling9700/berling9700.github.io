@@ -125,7 +125,23 @@ section img:hover {
     z-index: 1; /* Set a lower z-index value */
   }
 
-  .work-img {
+  .work-section {
+    text-align: center; /* Center-align the header */
+  }
+  
+  .work-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .work-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .work-item img {
     width: 500px; /* Set a fixed width for the images */
     height: 500px; /* Set a fixed height for the images */
     object-fit: cover; /* Ensure the entire image is visible within the specified dimensions */
@@ -133,6 +149,10 @@ section img:hover {
     border-radius: 10px; /* Add rounded corners to the images */
     margin: 20px; /* Add margin around each image for spacing */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+
+  .work-item h3 {
+    margin-top: 10px; /* Adjust margin as needed */
   }
   
   @media screen and (max-width: 600px) {

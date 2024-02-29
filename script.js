@@ -24,10 +24,10 @@ document.getElementById('view-work-button').addEventListener('click', function()
 particlesJS('particles-js-head', {
   "particles": {
     "number": {
-      "value": 350, // Adjust the number of particles
+      "value": 300, // Adjust the number of particles
       "density": {
         "enable": true,
-        "value_area": 200 // Adjust the density of particles
+        "value_area": 400 // Adjust the density of particles
       }
     },
     "color": {
