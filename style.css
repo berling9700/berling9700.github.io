@@ -94,7 +94,7 @@ section {
   padding: 15px;
 }
 
-section img:hover {
+.image-style:hover {
   transform: scale(1.1); 
   transition: transform 0.3s ease; 
 }
@@ -151,7 +151,7 @@ section img:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   }
 
-  .work-item h3 {
+  .work-item h2 {
     margin-top: 10px; /* Adjust margin as needed */
   }
   
