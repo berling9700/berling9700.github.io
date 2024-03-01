@@ -127,10 +127,10 @@ particlesJS('particles-js-head', {
 particlesJS('particles-js-main', {
   "particles": {
     "number": {
-      "value": 200, // Adjust the number of particles
+      "value": 100, // Adjust the number of particles
       "density": {
         "enable": true,
-        "value_area": 800 // Adjust the density of particles
+        "value_area": 900 // Adjust the density of particles
       }
     },
     "color": {
