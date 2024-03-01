@@ -16,7 +16,7 @@ index.html
       <li><a href="#work">My Projects</a></li>
       <li><a href="#contact">Contact Me</a></li>
       <!-- Button to display PDF -->
-      <li><a id="pdf-button" style="right: 0; position: absolute;">Resume</a></li>
+      <li><a id="pdf-button" class="pdf-button">Resume</a></li>
     </ul>
   </nav>
   <header id="home">
@@ -32,8 +32,8 @@ index.html
   <main>
     <div class="particles-container">
       <section id="about-me" style="text-align: center;">
-        <h1 style="font-size: 50px; font-weight: bold;">About Me</h1>
-        <p style="margin-left: 150px; margin-right: 150px;">
+        <h1 class="section-header">About Me</h1>
+        <p class="section-description">
           Fully committed to life-long learning,
           I'm a full stack developer with a deep passion for JavaScript,
           C# and all things web development. The unique combination of creativity, logic,
@@ -56,13 +56,13 @@ index.html
       </section>
 
       <section id="work" class="work-section">
-        <h1 style="font-size: 50px; font-weight: bold;">My Projects</h1>
+        <h1 class="section-header">My Projects</h1>
         <div class="work-items" style="justify-content: left;">
           <div class="work-item">
             <img src="images/Zelda.png" alt="Zelda">
             <div style="flex-direction: column;">
-              <h2 style="font-size: 30px;">Zelda Game</h2>
-              <p style="margin-left: 50px; margin-right: 50px; font-size: 20px;">
+              <h2 class="work-item-title">Zelda Game</h2>
+              <p class="work-item-description">
                 A custom dungeon developed from the Legend of Zelda game. Used C#, Monogame, MVC architecture.
               </p>
             </div>
@@ -71,8 +71,8 @@ index.html
         <div class="work-items" style="justify-content: right;">
           <div class="work-item">
             <div style="flex-direction: column;">
-              <h2 style="font-size: 30px;">GroupMe Reminders</h2>
-              <p style="margin-left: 50px; margin-right: 50px; font-size: 20px;">
+              <h2 class="work-item-title">GroupMe Reminders</h2>
+              <p class="work-item-description">
                 A small app designed to interact with the GroupMe public API to send reminder texts via a 
                 GroupMe Bot to a specific group chat. Used python and Windows Task Scheduler.
               </p>
