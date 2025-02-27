@@ -5,6 +5,7 @@ index.html
 <head>
   <title>Robby Berling</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="t-rex-runner-gh-pages/index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -31,7 +32,7 @@ index.html
   <main>
     <div id="particles-js-main" class="particles-js-main"></div>
     <div class="particles-container">
-      <section id="about-me" style="text-align: center;">
+      <section id="about-me" style="text-align: center; padding-bottom: 50px">
         <h1 class="section-header">About Me</h1>
         <p class="section-description">
           Fully committed to life-long learning,
@@ -56,30 +57,42 @@ index.html
       </section>
 
       <section id="work" class="work-section">
-        <h1 class="section-header">My Projects</h1>
-        <div class="work-items" style="justify-content: left;">
-          <div class="work-item">
-            <img src="images/Zelda.png" alt="Zelda">
-            <div style="flex-direction: column;">
-              <h2 class="work-item-title">Zelda Game</h2>
-              <p class="work-item-description">
-                A custom dungeon developed from the Legend of Zelda game. Used C#, Monogame, MVC architecture.
-              </p>
-            </div>
+          <h1 class="section-header">My Projects</h1>
+          <div class="work-items" style="justify-content: left; padding-bottom: 75px">
+              <div class="work-item">
+                  <img src="images/BudgetTracker.png" alt="BudgetTracker">
+                  <div style="flex-direction: column;">
+                      <h2 class="work-item-title">Budget Tracker App</h2>
+                      <p class="work-item-description">
+                          A progressive web app designed to set budgets and track expenses for users. Utilizes a custom .Net API.
+                          Used Blazor, .Net, C#, Javascript, and MVC architecture. Deployed on Netlify.
+                      </p>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="work-items" style="justify-content: right;">
-          <div class="work-item">
-            <div style="flex-direction: column;">
-              <h2 class="work-item-title">GroupMe Reminders</h2>
-              <p class="work-item-description">
-                A small app designed to interact with the GroupMe public API to send reminder texts via a 
-                GroupMe Bot to a specific group chat. Used python and Windows Task Scheduler.
-              </p>
-            </div>
-            <img src="images/GroupMe.jpg" alt="GroupMe">
+          <div class="work-items" style="justify-content: right; padding-bottom: 75px">
+              <div class="work-item">
+                  <div style="flex-direction: column;">
+                      <h2 class="work-item-title">Zelda Game</h2>
+                      <p class="work-item-description">
+                          A custom dungeon developed from the Legend of Zelda game. Used C#, Monogame, and MVC architecture.
+                      </p>
+                  </div>
+                  <img src="images/Zelda.png" alt="Zelda">
+              </div>
           </div>
-        </div>
+          <div class="work-items" style="justify-content: left; padding-bottom: 75px">
+              <div class="work-item">
+                  <img src="images/InterestRateTracker.png" alt="InterestRateTracker">
+                  <div style="flex-direction: column;">
+                      <h2 class="work-item-title">Interest Rate Tracker</h2>
+                      <p class="work-item-description">
+                          A small app designed to interact with a public Mortgage Rate API to send reminder emails via a
+                          ReSend. Used Next.js and deployed on Vercel.
+                      </p>
+                  </div>
+              </div>
+          </div>
       </section>
 
       <section id="contact">
@@ -88,11 +101,15 @@ index.html
             <button>Contact Me</button>
           </a>
         </div>
+        <div style="z-index: 100; text-align: center; padding-top: 75px" class="iframe-container">
+          <iframe src="t-rex-runner-gh-pages/index.html" class="iframe" frameborder="0"></iframe>
+        </div>
       </section>
     </div>
   </main>
   <script src="particles.js"></script>
   <script src="script.js"></script>
+  <script src="t-rex-runner-gh-pages/index.js"></script>
 </body>
 
 </html>

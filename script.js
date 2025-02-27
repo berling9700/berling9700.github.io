@@ -21,6 +21,16 @@ document.getElementById('view-work-button').addEventListener('click', function()
   document.getElementById('about-me').scrollIntoView({ behavior: 'smooth' });
 });
 
+document.addEventListener("keydown", function (event) {
+    // Check if the active element is inside an iframe
+    if (document.activeElement.tagName === "iframe") {
+        // Disable arrow keys (Up, Down, Left, Right)
+        if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(event.key)) {
+            event.preventDefault();
+        }
+    }
+});
+
 particlesJS('particles-js-head', {
   "particles": {
     "number": {

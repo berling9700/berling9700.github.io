@@ -222,8 +222,8 @@ section {
 
   .work-item img {
     width: 500px; 
-    height: 500px; 
-    object-fit: cover; /* Ensure the entire image is visible within the specified dimensions */
+/*    height: 500px; 
+*/    object-fit: contain; 
     border: 4px solid #487e7e; /* Add a thick border around the images */
     border-radius: 10px; /* Add rounded corners to the images */
     margin: 20px; /* Add margin around each image for spacing */
@@ -265,4 +265,14 @@ section {
   .work-item h2 {
     margin-top: 10px; /* Adjust margin as needed */
   }
+
+.iframe-container {
+    overflow: auto; /* Add scroll bars if content overflows */
+}
+
+.iframe {
+    width: 600px;
+    height: 300px;
+    border: none; /* Remove iframe border */
+}
   
