@@ -1,115 +1,24 @@
-index.html
 <!DOCTYPE html>
-<html>
-
-<head>
-  <title>Robby Berling</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="t-rex-runner-gh-pages/index.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="/images/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robby Berling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+  }
+}
+</script>
 </head>
-
-<body id="body">
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about-me">About Me</a></li>
-      <li><a href="#work">My Projects</a></li>
-      <li><a href="#contact">Contact Me</a></li>
-      <!-- Button to display PDF -->
-      <li><a id="pdf-button" class="pdf-button">Resume</a></li>
-    </ul>
-  </nav>
-  <header id="home">
-    <div id="particles-container" class="particles-container">
-      <h1>Hello, I'm <span style="font-weight: bold;">Robby</span>.</h1>
-      </h1>
-      <h1 style="color: rgb(197, 189, 189);">I'm a full stack developer.</h1>
-      <button id="view-work-button" href="#about-me">View My Work</button>
-    </div>
-    <div id="particles-js-head" class="particles-js-head"></div>
-  </header>
-  <main>
-    <div id="particles-js-main" class="particles-js-main"></div>
-    <div class="particles-container">
-      <section id="about-me" style="text-align: center; padding-bottom: 50px">
-        <h1 class="section-header">About Me</h1>
-        <p class="section-description">
-          Fully committed to life-long learning,
-          I'm a full stack developer with a deep passion for JavaScript,
-          C# and all things web development. The unique combination of creativity, logic,
-          technology and never running out of new things to discover, drives my excitement and
-          passion for web development. When I'm not at my computer I like to spend my time
-          reading, traveling, and following sports.
-        </p>
-        <p>
-          <img class="image-style" src="images/C.png" alt="C#">
-          <img class="image-style" src="images/python.png" alt="Python">
-          <img class="image-style" src="images/html.png" alt="Html">
-          <img class="image-style" src="images/knockout.png" alt="Knockout">
-        </p>
-        <p>
-          <img class="image-style" src="images/docker.png" alt="Docker">
-          <img class="image-style" src="images/JavaScript.png" alt="JavaScript">
-          <img class="image-style" src="images/css.png" alt="CSS">
-          <img class="image-style" src="images/azure.png" alt="Azure">
-        </p>
-      </section>
-
-      <section id="work" class="work-section">
-          <h1 class="section-header">My Projects</h1>
-          <div class="work-items" style="justify-content: left; padding-bottom: 75px">
-              <div class="work-item">
-                  <img src="images/BudgetTracker.png" alt="BudgetTracker">
-                  <div style="flex-direction: column;">
-                      <h2 class="work-item-title">Budget Tracker App</h2>
-                      <p class="work-item-description">
-                          A progressive web app designed to set budgets and track expenses for users. Utilizes a custom .Net API.
-                          Used Blazor, .Net, C#, Javascript, and MVC architecture. Deployed on Netlify.
-                      </p>
-                  </div>
-              </div>
-          </div>
-          <div class="work-items" style="justify-content: right; padding-bottom: 75px">
-              <div class="work-item">
-                  <div style="flex-direction: column;">
-                      <h2 class="work-item-title">Zelda Game</h2>
-                      <p class="work-item-description">
-                          A custom dungeon developed from the Legend of Zelda game. Used C#, Monogame, and MVC architecture.
-                      </p>
-                  </div>
-                  <img src="images/Zelda.png" alt="Zelda">
-              </div>
-          </div>
-          <div class="work-items" style="justify-content: left; padding-bottom: 75px">
-              <div class="work-item">
-                  <img src="images/InterestRateTracker.png" alt="InterestRateTracker">
-                  <div style="flex-direction: column;">
-                      <h2 class="work-item-title">Interest Rate Tracker</h2>
-                      <p class="work-item-description">
-                          A small app designed to interact with a public Mortgage Rate API to send reminder emails via a
-                          ReSend. Used Next.js and deployed on Vercel.
-                      </p>
-                  </div>
-              </div>
-          </div>
-      </section>
-
-      <section id="contact">
-        <div>
-          <a href="mailto:berling9700@gmail.com" id="contact-me-button" style="text-decoration: none;">
-            <button>Contact Me</button>
-          </a>
-        </div>
-        <div style="z-index: 100; text-align: center; padding-top: 75px" class="iframe-container">
-          <iframe src="t-rex-runner-gh-pages/index.html" class="iframe" frameborder="0"></iframe>
-        </div>
-      </section>
-    </div>
-  </main>
-  <script src="particles.js"></script>
-  <script src="script.js"></script>
-  <script src="t-rex-runner-gh-pages/index.js"></script>
-</body>
-
+  <body class="bg-zinc-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
