@@ -7,28 +7,67 @@
     <title>Robby Berling</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
+    
+    <!-- 1. Add Babel for in-browser transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- 2. Configure ES Module Shims to transpile TS/TSX on the fly -->
+    <script>
+      window.esmsInitOptions = {
+        shimMode: true, // Enable shims for all modules
+        async fetch(url, options) {
+          // If the URL is for a TS/TSX file, fetch and transpile it
+          if (url.endsWith('.ts') || url.endsWith('.tsx')) {
+            const res = await fetch(url, options);
+            if (!res.ok) return res;
+            const text = await res.text();
+            
+            // Transpile the text content with Babel
+            const result = Babel.transform(text, {
+              presets: ['react', 'typescript'],
+              filename: url, // for source maps and better error messages
+            });
+            
+            // Return a new Response object with the transpiled code
+            return new Response(new Blob([result.code], { type: 'application/javascript' }));
+          }
+          
+          // For all other modules (like React from esm.sh), fetch as normal
+          return fetch(url, options);
+        }
+      };
+    </script>
+    
+    <!-- 3. Add ES Module Shims (must be after esmsInitOptions) -->
+    <script async src="https://unpkg.com/es-module-shims@1.10.0/dist/es-module-shims.js"></script>
+    
+    <!-- 4. Configure import map for external dependencies -->
+    <script type="importmap-shim">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19",
+    "react-dom/client": "https://esm.sh/react-dom@19/client",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+  }
+}
+</script>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://esm.sh/react@^19.1.1/",
     "react": "https://esm.sh/react@^19.1.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.1/"
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/"
   }
 }
 </script>
 </head>
   <body class="bg-zinc-900">
     <div id="root"></div>
-    <!--
-      Babel Standalone is added to transpile JSX and TypeScript directly in the browser.
-      This allows the project to run on static hosts like GitHub Pages without a build step.
-    -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <!--
-      The script type is changed to "text/babel".
-      - 'data-presets="react,typescript"' tells Babel to handle both JSX and TypeScript syntax.
-      - 'data-type="module"' is crucial for enabling ES module imports/exports within the TSX files.
-    -->
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
+
+    <!-- 5. Import the application entry point using a module-shim -->
+    <script type="module-shim">
+      import('./index.tsx');
+    </script>
   </body>
 </html>
