@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { PROJECTS_DATA } from '../constants';
-import ProjectCard from './ProjectCard';
+import { PROJECTS_DATA } from '../constants.ts';
+import ProjectCard from './ProjectCard.tsx';
 
 const Projects: React.FC = () => {
   return (

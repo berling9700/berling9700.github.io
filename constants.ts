@@ -1,5 +1,5 @@
 
-import { Project, SkillCategory, ExperienceItem } from './types';
+import { Project, SkillCategory, ExperienceItem } from './types.ts';
 
 export const NAV_LINKS = [
   { name: 'About', href: '#about' },

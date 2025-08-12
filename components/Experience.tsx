@@ -1,6 +1,6 @@
 import React from 'react';
-import { EXPERIENCE_DATA } from '../constants';
-import { ExperienceItem } from '../types';
+import { EXPERIENCE_DATA } from '../constants.ts';
+import { ExperienceItem } from '../types.ts';
 
 const TimelineItem: React.FC<{ item: ExperienceItem; isLast: boolean }> = ({ item, isLast }) => (
   <div className="relative">

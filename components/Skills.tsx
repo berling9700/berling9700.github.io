@@ -1,6 +1,6 @@
 import React from 'react';
-import { SKILLS_DATA } from '../constants';
-import { SkillCategory } from '../types';
+import { SKILLS_DATA } from '../constants.ts';
+import { SkillCategory } from '../types.ts';
 
 const SkillCard: React.FC<{ category: SkillCategory }> = ({ category }) => (
   <div className="bg-zinc-800/50 rounded-lg p-6 ring-1 ring-zinc-700 hover:ring-indigo-400 transition-all duration-300">

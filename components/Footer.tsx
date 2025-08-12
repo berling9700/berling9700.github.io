@@ -1,5 +1,5 @@
 import React from 'react';
-import { GitHubIcon, LinkedInIcon } from './Icons';
+import { GitHubIcon, LinkedInIcon } from './Icons.tsx';
 
 const Footer: React.FC = () => {
   const socialLinks = [

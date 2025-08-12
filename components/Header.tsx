@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS } from '../constants.ts';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
