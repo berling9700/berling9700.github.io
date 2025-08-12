@@ -19,6 +19,16 @@
 </head>
   <body class="bg-zinc-900">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
+    <!--
+      Babel Standalone is added to transpile JSX and TypeScript directly in the browser.
+      This allows the project to run on static hosts like GitHub Pages without a build step.
+    -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!--
+      The script type is changed to "text/babel".
+      - 'data-presets="react,typescript"' tells Babel to handle both JSX and TypeScript syntax.
+      - 'data-type="module"' is crucial for enabling ES module imports/exports within the TSX files.
+    -->
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
