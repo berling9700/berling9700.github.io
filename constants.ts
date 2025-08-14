@@ -39,6 +39,8 @@ export const SKILLS_DATA: SkillCategory[] = [
       { name: 'AWS' },
       { name: 'Docker' },
       { name: 'Vercel' },
+      { name: 'SSMS' },
+      { name: 'MYSQL' },
     ],
   },
   {
@@ -92,7 +94,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: 'Software Engineer',
     company: 'Kimball Midwest',
     period: '2024 - Present',
-    description: ['Facilitated the replacement of deprecated BizTalk software solution to improve system stability and save $40,000 yearly.', 'Mentored junior engineers and improved code quality by implementing a new testing strategy.', 'Designed a new database to integrate between legacy and future state systems to increase simplicity and scalability.'],
+    description: ['Facilitated the replacement of a deprecated software solution to improve system stability and save $40,000 yearly.', 'Mentored junior engineers and improved code quality by implementing a new testing strategy.', 'Designed a new database to integrate between legacy and future state systems to increase simplicity and scalability.'],
   },
   {
     role: 'Associate Software Engineer',
