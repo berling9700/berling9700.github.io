@@ -94,7 +94,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: 'Software Engineer',
     company: 'Kimball Midwest',
     period: '2024 - Present',
-    description: ['Facilitated the replacement of a deprecated software solution to improve system stability and save $40,000 yearly.', 'Mentored junior engineers and improved code quality by implementing a new testing strategy.', 'Designed a new database to integrate between legacy and future state systems to increase simplicity and scalability.'],
+    description: ['Facilitated the replacement of a deprecated software solution to improve system stability and save $40,000 yearly.', 'Mentored junior engineers and improved code quality by implementing a new testing strategy.', 'Designed a new database to integrate between legacy and future state systems to increase simplicity and scalability.', 'Developed new microservice applications to replace legacy systems and increase scalability.'],
   },
   {
     role: 'Associate Software Engineer',
@@ -106,6 +106,6 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: 'Web Developer Intern',
     company: 'JumpMind',
     period: '2020 - 2021',
-    description: ['Optimized database structures and stored procedures, enhancing query performance and reducing load times.'],
+    description: ['Optimized database structures and stored procedures, enhancing query performance and reducing load times.', 'Created a new lower environment for reliable testing and stable development.'],
   },
 ];
