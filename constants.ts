@@ -100,7 +100,7 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
     role: 'Associate Software Engineer',
     company: 'Kimball Midwest',
     period: '2022 - 2024',
-    description: ['Designed REST APIs and UIs in Azure Cloud, enabling faster and more scalable product enhancements.', 'Migrated legacy APIs to a modern microservices architecture, improving performance and scalability.'],
+    description: ['Designed REST APIs and UIs in Azure Cloud, enabling faster and more scalable product enhancements.', 'Migrated legacy APIs to a modern microservices architecture, improving performance and scalability.', 'Diagnosed and resolved high-priority bugs in legacy applications, improving system stability.'],
   },
   {
     role: 'Web Developer Intern',
