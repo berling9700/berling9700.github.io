@@ -1,5 +1,5 @@
 
-import { Project, SkillCategory, ExperienceItem } from './types.ts';
+import type { Project, SkillCategory, ExperienceItem } from './types.ts';
 
 export const NAV_LINKS = [
   { name: 'About', href: '#about' },
@@ -46,7 +46,7 @@ export const SKILLS_DATA: SkillCategory[] = [
   {
     category: 'Tools & Methods',
     skills: [
-      { name: 'Git & GitHub' },
+      { name: 'Git' },
       { name: 'CI/CD' },
       { name: 'Agile/Scrum' },
       { name: 'Figma' },

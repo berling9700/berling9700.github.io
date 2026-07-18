@@ -1,5 +1,5 @@
 import React from 'react';
-import { Project } from '../types.ts';
+import type { Project } from '../types.ts';
 import { GitHubIcon, ExternalLinkIcon } from './Icons.tsx';
 
 interface ProjectCardProps {
