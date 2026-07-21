@@ -83,7 +83,7 @@ export const PROJECTS_DATA: Project[] = [
     title: 'Interest Rate Tracker',
     description: 'A tool that monitors and tracks interest rates from various sources. It sends email notifications to users when significant rate changes occur.',
     tags: ['Node.js', 'Vercel', 'Next.JS', 'ReSend'],
-    imageUrl: './images/InterestRateTracker.png',
+    imageUrl: './images/MortgageRate.png',
     repoUrl: 'https://github.com/berling9700/mortgage-rate-tracker',
   },
 ];
