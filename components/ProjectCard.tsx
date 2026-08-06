@@ -30,17 +30,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           ))}
         </div>
         <div className="flex items-center gap-4 mt-6">
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-zinc-300 hover:text-indigo-300 transition-colors"
-            >
-              <ExternalLinkIcon className="h-5 w-5" />
-              Live Demo
-            </a>
-          )}
           <a
             href={project.repoUrl}
             target="_blank"
