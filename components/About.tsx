@@ -22,7 +22,7 @@ const About: React.FC = () => {
         </div>
         <div className="flex justify-center">
           <img
-            src="/images/Me.jpg"
+            src="./images/Me.jpg"
             alt="Robby Berling"
             className="rounded-full h-64 w-64 md:h-80 md:w-80 object-cover shadow-2xl border-4 border-zinc-700"
           />
