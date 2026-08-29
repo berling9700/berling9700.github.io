@@ -1,6 +1,9 @@
 
 import type { Project, SkillCategory, ExperienceItem } from './types.ts';
 
+const imageUrl = (fileName: string) =>
+  `${import.meta.env.BASE_URL}images/${fileName}`;
+
 export const NAV_LINKS = [
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
@@ -65,28 +68,28 @@ export const PROJECTS_DATA: Project[] = [
     title: 'AI-Powered Home Project Application',
     description: 'An innovative platform that leverages AI to help users plan, visualize, and manage home improvement projects, featuring AI-driven design suggestions and material estimation.',
     tags: ['React', 'TypeScript', 'Gemini API', 'Vercel', 'Tailwind CSS'],
-    imageUrl: '/berling9700.github.io/images/Jeff.png',
+    imageUrl: imageUrl('Jeff.png'),
     repoUrl: 'https://github.com/berling9700/home-project-tracker',
   },
   {
     title: 'Budget Management Platform',
     description: 'A comprehensive financial tool for personal budget tracking. Includes features for expense logging, income tracking, financial goal setting, and insightful data visualizations.',
     tags: ['Blazor', 'C#', 'MySQL', 'Chart.js', 'Netlify'],
-    imageUrl: '/berling9700.github.io/images/BudgetTracker.png',
+    imageUrl: imageUrl('BudgetTracker.png'),
     repoUrl: 'https://github.com/berling9700/BudgetTracker',
   },
   {
     title: 'Legend of Zelda Custom Game',
     description: "A fan-made 2D adventure game inspired by 'The Legend of Zelda,' built with a custom C# engine and featuring pixel art, combat, and a puzzle-filled dungeon.",
     tags: ['C#', 'MonoGame', 'Game Development', 'Webpack'],
-    imageUrl: '/berling9700.github.io/images/Zelda.png',
+    imageUrl: imageUrl('Zelda.png'),
     repoUrl: 'https://github.com/berling9700/Zelda-Project',
   },
    {
     title: 'Interest Rate Tracker',
     description: 'A tool that monitors and tracks interest rates from various sources. It sends email notifications to users when significant rate changes occur.',
     tags: ['Node.js', 'Vercel', 'Next.JS', 'ReSend'],
-    imageUrl: '/berling9700.github.io/images/MortgageRate.png',
+    imageUrl: imageUrl('MortgageRate.png'),
     repoUrl: 'https://github.com/berling9700/mortgage-rate-tracker',
   },
 ];
